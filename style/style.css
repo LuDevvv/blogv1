@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.ct-all {
+  width: 90%;
+  height: auto;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.hd {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.389);
+  padding-bottom: 60px;
+}
+.hd .ct-navigation {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+}
+.hd .left-ct img {
+  width: 150px;
+}
+.hd .right-ct {
+  display: flex;
+  justify-content: space-evenly;
+}
+.hd .right-ct li a {
+  color: black;
+}
+.hd .right-ct .ulct {
+  display: flex;
+}
+.hd .right-ct .ulct li a {
+  margin: 10px;
+  font-weight: 500;
+}
+.hd .right-ct .form-search {
+  display: flex;
+  border-radius: 5px;
+  margin: 0 25px 0 25px;
+}
+.hd .right-ct .form-search-fsin {
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0px 10px 0px 10px;
+  border: solid black;
+  border-radius: 5px 0px 0px 5px;
+}
+.hd .right-ct .form-search-btn {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 0px 10px 0px 10px;
+}
+.hd .right-ct .ct-social {
+  display: flex;
+}
+.hd .right-ct .ct-social li {
+  margin: 0 10px 0 10px;
+}
+.hd .right-ct .ct-social li a {
+  text-decoration: none;
+}
+
+.ct-hero {
+  margin-top: 50px;
+}
+.ct-hero .ct-hero-text {
+  width: 1000px;
+}
+.ct-hero .ct-hero-text .ct-hero-text-h1 {
+  font-size: 70px;
+  color: black;
+}
+.ct-hero .ct-hero-text .ct-hero-text-h1 .thin {
+  font-weight: 300;
+}
+.ct-hero .ct-nwl {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+}
+.ct-hero .ct-nwl p {
+  color: rgba(0, 0, 0, 0.668);
+  width: 400px;
+  margin-left: 20px;
+}
+.ct-hero .ct-nwl .form-newsletter {
+  position: relative;
+  display: flex;
+  width: 550px;
+  height: 70px;
+}
+.ct-hero .ct-nwl .form-newsletter-input {
+  position: absolute;
+  font-size: 25px;
+  padding: 20px 200px 20px 40px;
+  outline: none;
+  border: none;
+  background-color: rgba(224, 224, 224, 0.338);
+  border-radius: 40px;
+}
+.ct-hero .ct-nwl .form-newsletter-btn {
+  position: absolute;
+  background-color: black;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 20px 40px 20px 40px;
+  font-size: 25px;
+  cursor: pointer;
+  right: 0;
+}
+
+/*      SECTION CARD SLIDE        */
+.sc-card-slider {
+  width: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.389);
+  padding-bottom: 60px;
+}
+.sc-card-slider .title-and-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.sc-card-slider .title-and-controls-title {
+  font-size: 30px;
+  font-weight: 400;
+  color: black;
+}
+.sc-card-slider .arrow-left-btn,
+.sc-card-slider .arrow-right-btn {
+  border-radius: 5px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.sc-card-slider .ct-style {
+  width: 100%;
+  height: auto;
+  display: flex;
+  transition: all ease 2s;
+  gap: 20px;
+}
+.sc-card-slider .cards-ct {
+  width: 100%;
+  display: flex;
+}
+.sc-card-slider .cards-ct .article {
+  width: 325px;
+  height: auto;
+}
+.sc-card-slider .cards-ct .article .article-pic {
+  width: 325px;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.sc-card-slider .cards-ct .article .article-pic:hover {
+  transform: translateY(-5px);
+}
+.sc-card-slider .cards-ct .article .article-title {
+  position: relative;
+  font-size: 20px;
+  margin: 15px 0 15px 0;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
+
+/*      SECTION CARD SLIDE        */
+/* SECTION ARTICLES  */
+.sc-card-articles {
+  width: 100%;
+  margin-top: 50px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.389);
+  padding-bottom: 60px;
+}
+.sc-card-articles .title-and-authors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sc-card-articles .title-and-authors-title {
+  font-size: 40px;
+  width: 320px;
+  font-weight: bold;
+  color: black;
+}
+.sc-card-articles .title-and-authors-authors {
+  display: flex;
+}
+.sc-card-articles .title-and-authors-authors .authors-ct {
+  position: sticky;
+  display: flex;
+  width: auto;
+  height: 80px;
+  padding-right: 15px;
+}
+.sc-card-articles .title-and-authors-authors .author {
+  margin-right: 80px;
+  transition: all ease-in-out 0.2s;
+}
+.sc-card-articles .title-and-authors-authors .author:hover {
+  transform: translateY(-3px);
+}
+.sc-card-articles .title-and-authors-authors .author img {
+  position: absolute;
+  object-fit: cover;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  outline: 5px solid rgb(255, 255, 255);
+}
+.sc-card-articles .articles-ct {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  gap: 20px;
+  row-gap: 80px;
+  flex-wrap: wrap;
+}
+.sc-card-articles .articles-ct .article-blog {
+  width: 440px;
+}
+.sc-card-articles .articles-ct .article-blog-pic {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.sc-card-articles .articles-ct .article-blog .tags-ct {
+  margin-bottom: 20px;
+}
+.sc-card-articles .articles-ct .article-blog .article-title {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.sc-card-articles .articles-ct .article-blog .article-paragraph {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* TAGS */
+.tags-ct {
+  margin: 10px 0 10px 0;
+}
+.tags-ct .tag {
+  padding: 5px 12px 5px 12px;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.tags-ct .tag-web {
+  background-color: indigo;
+}
+.tags-ct .tag-html {
+  background-color: #e73c16;
+}
+.tags-ct .tag-css {
+  background-color: #078bd2;
+}
+.tags-ct .tag-js {
+  background-color: #efd40b;
+}
+
+/* TAGS */
+
+/*# sourceMappingURL=style.css.map */
